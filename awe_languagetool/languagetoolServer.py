@@ -36,7 +36,7 @@ def runServer(fileName=None, port=8081):
         LTSpec.origin = LTSpec.submodule_search_locations[0]
 
     with resources.path('awe_languagetool.LanguageTool5_5',
-                        'languagetool-server.jar') as LANGUAGE_TOOL_PATH
+                        'languagetool-server.jar') as LANGUAGE_TOOL_PATH:
         print("Setting Language Path:",  LANGUAGE_TOOL_PATH)
         MAPPING_PATH = os.path.dirname(LANGUAGE_TOOL_PATH)
 
